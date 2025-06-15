@@ -49,11 +49,12 @@ Memory: {memory}
 
 # 🎨 UI
 st.title("💌 My Memory Bot")
-st.write("This bot reminds Errorgon how much Romi loves him. 💖")
+st.write("This bot is on a very emotional mission: to make **Errorgon** finally understand how ridiculously, hopelessly, dramatically much **Romi** loves him. Like, *'please don't leave me, 
+I'm already emotionally deceased'* levels of love. 💖")
 
-emotion = st.text_input("How is Errorgon feeling today? (e.g. sad, angry, lonely)")
+emotion = st.text_input("How am I feeling today? (e.g. sad, angry, lonely)")
 
-if st.button("Send Love 💘"):
+if st.button("I love you dont stay angry on me 💘"):
     if not emotion:
         st.warning("Please enter an emotion first.")
     else:
