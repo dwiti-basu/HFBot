@@ -11,7 +11,8 @@ with open("memories.json", "r", encoding="utf-8") as f:
     memory_data = json.load(f)
 
 # Hugging Face Inference API configuration (key stored securely in Streamlit secrets)
-HF_API_KEY = st.secrets["HF_API_KEY"]
+HF_API_KEY = "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"
+HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 API_URL = "https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
@@ -40,14 +41,11 @@ Memory: {memory}
 
 # Streamlit UI
 st.title("💌 My Memory Bot")
-st.write(
-    "This bot is here to convince **Errorgon** how much **Romi** loves him. "
-    "Truly, madly, deeply. 😭❤️"
-)
+st.write("This bot is on a very emotional mission: to make **Errorgon** finally understand how ridiculously, hopelessly, dramatically much **Romi** loves him. Like, *'please don't leave me, I'm already emotionally deceased'* levels of love 😭❤️")
 
-emotion = st.text_input("How are you feeling right now? (e.g. sad, angry, lonely)")
+emotion = st.text_input("How am I feeling right now? (e.g. sad, angry, lonely, missing you, hurt, insecure, guilty, confused, tired)")
 
-if st.button("Tell him I love him 💖"):
+if st.button("I love you dont stay angry on me 💖"):
     if not emotion:
         st.warning("Please enter an emotion.")
     else:
