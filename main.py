@@ -54,7 +54,7 @@ Memory: {memory}
     return "⚠️ Could not extract message. Please check model response or API status."
 
 # UI input
-emotion = st.text_input("How is Errorgon feeling today? 😢 (e.g. sad, lonely, angry)")
+emotion = st.text_input("How am I feeling today? 😢 (e.g. sad, lonely, angry)")
 
 # Button
 if st.button("I Love you don't stay angry on me 💘"):
