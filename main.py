@@ -16,7 +16,7 @@ with open("memories.json", "r", encoding="utf-8") as f:
 
 # Hugging Face API (hardcoded for simplicity — keep it safe in production!)
 HF_API_KEY = "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"  # Replace with your key
-API_URL = "https://api-inference.huggingface.co/models/tiiuae/falcon-7b-instruct"
+API_URL = "https://api-inference.huggingface.co/models/google/flan-t5-base"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
 # Generate reply using Hugging Face API
