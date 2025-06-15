@@ -8,7 +8,7 @@ st.set_page_config(page_title="💌 My Memory Bot")
 
 # 🔑 TEMP: Hardcoded Hugging Face API key (DO NOT COMMIT TO GITHUB)
 HF_API_KEY = "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"  # Replace with your key
-API_URL = "https://api-inference.huggingface.co/models/TinyLlama/TinyLlama-1.1B-Chat-v1.0"
+API_URL = "https://api-inference.huggingface.co/models/mistralai/Mistral-7B-Instruct-v0.1"
 HEADERS = {"Authorization": f"Bearer {HF_API_KEY}"}
 
 # 🧠 Load memory data
